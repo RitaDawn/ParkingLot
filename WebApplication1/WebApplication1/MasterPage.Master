@@ -1,0 +1,56 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterPage.master.vb" Inherits="WebApplication1.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 432px;
+        }
+        .auto-style3 {
+            height: 147px;
+        }
+        .auto-style4 {
+            width: 152px;
+        }
+        .auto-style5 {
+            height: 147px;
+            width: 152px;
+        }
+        .auto-style6 {
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style6" colspan="2" style="WIDTH 100%"><strong>Online Parking Booking System</strong></td>
+            </tr>
+            <tr>
+                <td class="auto-style5"></td>
+                <td class="auto-style3" colspan="2" style="WIDTH 100%">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style2" style="WIDTH 100%">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
